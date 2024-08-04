@@ -1,0 +1,120 @@
+body {
+    background-color:snow;
+    font-family: Didot;
+}
+
+td {
+    background-color:snow;
+    font-family: Didot;
+}
+
+h1{
+    text-align: center;
+    font-family: Didot;
+    font-weight: 180;
+}
+
+caption {
+    font-size: large;
+}
+
+dl {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: mintcream;
+}
+
+h2 {
+    font-style: italic;
+    font-size: larger;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+    width: 1200px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.center td {
+    height: 55px;
+}
+
+th {
+    font-style: normal;
+    color: black;
+    text-align: center;
+    background-color: ghostwhite;
+    font-weight: 1000;
+    padding: 5px;
+}
+
+.time {
+    background-color: ghostwhite;
+}
+
+.eat {
+    background-color: rgb(254, 232, 232);
+}
+
+.homework {
+    background-color: rgb(232, 243, 252);
+}
+
+.cogs3 {
+    background-color: rgb(229, 249, 239);
+}
+
+.cogs11 {
+    background-color: rgb(249, 240, 226);
+}
+
+.movie {
+    background-color:seashell;
+}
+
+.draw {
+    background-color: rgb(243, 253, 250);
+}
+
+.brother {
+    background-color: lavenderblush;
+}
+
+.bed {
+    background-color: rgb(255, 252, 238);
+}
+
+.game {
+    background-color: lavender;
+}
+
+.free {
+    background-color: white;
+}
+
+a:link{
+    color:rgb(73, 88, 141);
+}
+
+a:visited{
+    color:rgba(186, 125, 202, 0.689)
+}
+
+a:active{
+    color:rgb(253, 165, 250);
+    cursor:grabbing;
+}
+
+a:hover{
+    color:rgb(165, 206, 253);
+    cursor:grab;
+}

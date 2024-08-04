@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Schedule for Jessica Li - jjl045 - Summer, 2024</title>
+    <link rel="stylesheet" href="styleLab2.css">
+</head>
+<body>
+    <h1>Terms and Definitions<img src="images/terms.png" height="150" style="position: relative;left: 20px;top: 25px;"></h1>
+    <dl>
+    <dt><b>How to define a table?</b></dt>
+        <dd>A table is defined by HTML tags &lt;table&gt;&lt;/table&gt;.</dd>
+    <dt><b>Describe when to use the following HTML elements:</b></dt>
+        <dd><b>&lt;tr&gt;:</b> stands for table row. Each table row starts with a &lt;tr&gt;&lt;/tr&gt; tag.</dd>
+        <dd><b>&lt;th&gt;:</b> stands for table header. Each table header is defined by a &lt;th&gt;&lt;/th&gt; tag.</dd>
+        <dd><b>&lt;td&gt;:</b> stands for table data. Each table cell is defined by a &lt;td&gt;&lt;/td&gt; tag.</dd>
+        <dd><b>&lt;thead&gt;:</b> groups the header content.</dd>
+        <dd><b>&lt;tfoot&gt;:</b> groups the footer content.</dd>
+        <dd><b>&lt;caption&gt;:</b> defines a table caption, which gives a title to the table.</dd>
+    <dt><b>What is the difference between colspan and rowspan?</b></dt>
+        <dd><b>colspan:</b> makes a cell span over multiple columns. The value of the colspan attribute represents the number of columns to span.</dd>
+        <dd><b>rowspan:</b> makes a cell span over multiple rows. The value of the rowspan attribute represents the number of rows to span.</dd>
+    <dt><b>What is the difference between cell spacing and padding?</b></dt>
+        <dd><b>Cell Spacing:</b> the space between each cell. The default is set to 2 pixels, but can be changed using the CSS border-spacing property.</dd>
+        <dd><b>Cell Padding:</b> the space between the cell edges and the cell content. The default is set to 0, but can be changed using the CSS padding property.</dd>
+    <dt><b>How do you define table borders using CSS?</b></dt>
+        <dd>The border property is used to define the table border in CSS.</dd>
+    <dt><b>How do you control border widths using CSS?</b></dt>
+        <dd>The border-width property is used to control the border width in CSS. When one value is used, it will apply the same width to all four sides. Using 2-4 values for this property allows for the manipulation of individual sides. </dd>
+    </dl>
+
+<table border="1" class="center">
+    <!--header-->
+    <caption><h1>Jessica's Schedule<br><br><img src="images/jessica.png" height="200"></h1>
+    <h2>2024 Summer Session I</h2></caption>
+
+    <!--days of the week-->
+    <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+    </tr>
+
+    <!--table content-->
+    <tr>
+        <td class="time">7:30-8:00am</td>
+        <td colspan="7" class="eat">Wake up and eat brekkie</td>
+    </tr>
+
+    <tr>
+        <td class="time">8:00-8:30am</td>
+        <td rowspan="6" class="homework">Homework<br><img src="images/homework.png" height="150"></td>
+        <td rowspan="6" class="cogs11"><a href="https://canvas.ucsd.edu/courses/57763">COGS 11 Lecture</a></td>
+        <td rowspan="6" class="homework">Homework<br><img src="images/homework.png" height="150"></td>
+        <td rowspan="6" class="cogs11"><a href="https://canvas.ucsd.edu/courses/57763">COGS 11 Lecture</a></td>
+        <td rowspan="8" colspan="3" class="brother"> Spend time with my younger brother<br><br><img src="images/brother.png" height="200"></td>
+    </tr>
+
+    <tr>
+        <td class="time">8:30-9:00am</td>
+    </tr>
+
+    <tr>
+        <td class="time">9:00-9:30am</td>
+    </tr>
+
+    <tr>
+        <td class="time">9:30-10:00am</td>
+    </tr>
+
+    <tr>
+        <td class="time">10:00-10:30am</td>
+    </tr>
+
+    <tr>
+        <td class="time">10:30-11:00am</td>
+    </tr>
+
+    <tr>
+        <td class="time">11:00-11:30am</td>
+        <td rowspan="6" class="cogs3"><a href="https://canvas.ucsd.edu/courses/57086">COGS 3 Lecture</a></td>
+        <td rowspan="2" class="homework"><br>Homework<br><img src="images/homework.png" height="150"></td>
+        <td rowspan="6" class="cogs3"><a href="https://canvas.ucsd.edu/courses/57086">COGS 3 Lecture</a></td>
+        <td rowspan="2" class="homework"><br>Homework<br><img src="images/homework.png" height="150"></td>
+    </tr>
+
+    <tr>
+        <td class="time">11:30-12:00pm</td>
+    </tr>
+
+    <tr>
+        <td class="time">12:00-12:30pm</td>
+        <td class="eat">Lunch</td>
+        <td colspan="4" class="eat">Lunch</td>
+    </tr>
+
+    <tr>
+        <td class="time">12:30-1:00pm</td>
+        <td rowspan="5" class="homework">Homework<br><img src="images/homework.png" height="150"></td>
+        <td rowspan="5" class="homework">Homework<br><img src="images/homework.png" height="150"></td>
+        <td rowspan="5" colspan="3" class="game">Play video games<br><br><img src="images/gaming.png" height="140"></td>
+    </tr>
+
+    <tr>
+        <td class="time">1:00-1:30pm</td>
+    </tr>
+
+    <tr>
+        <td class="time">1:30-2:00pm</td>
+    </tr>
+
+    <tr>
+        <td class="time">2:00-2:30pm</td>
+        <td rowspan="2" class="cogs3"><a href="https://canvas.ucsd.edu/courses/57086">COGS 3 Lab</a></td>
+        <td rowspan="2" class="cogs3"><a href="https://canvas.ucsd.edu/courses/57086">COGS 3 Lab</a></td>
+    </tr>
+
+    <tr>
+        <td class="time">2:30-3:00pm</td>
+    </tr>
+
+    <tr>
+        <td class="time">3:00-3:30pm</td>
+        <td rowspan="6" colspan="7" class="free"><br>Free time!<br><br><img src="images/freetime.png" height="200"></td>
+        
+    </tr>
+
+    <tr>
+        <td class="time">3:30-4:00pm</td>
+    </tr>
+
+    <tr>
+        <td class="time">4:00-4:30pm</td>
+    </tr>
+
+    <tr>
+        <td class="time">4:30-5:00pm</td>
+        
+    </tr>
+
+    <tr>
+        <td class="time">5:00-5:30pm</td>
+    </tr>
+
+    <tr>
+        <td class="time">5:30-6:00pm</td>
+    </tr>
+
+    <tr>
+        <td class="time">6:00-6:30pm</td>
+        <td rowspan="2" colspan="7" class="eat">Dinner</td>
+    </tr>
+
+    <tr>
+        <td class="time">6:30-7:00pm</td>
+    </tr>
+
+    <tr>
+        <td class="time">7:00-7:30pm</td>
+        <td rowspan="4" colspan="4" class="draw"><br>Draw on my ipad<br><img src="images/drawing.png" height="200"></td>
+        <td rowspan="4" colspan="3" class="movie">Movie night<br><img src="images/movie.png" height="150"></td>
+    </tr>
+
+    <tr>
+        <td class="time">7:30-8:00pm</td>
+    </tr>
+
+    <tr>
+        <td class="time">8:00-8:30pm</td>
+    </tr>
+
+    <tr>
+        <td class="time">8:30-9:00pm</td>
+    </tr>
+
+    <tr>
+        <td class="time">9:00-9:30pm</td>
+        <td rowspan="2" colspan="7" class="bed"><br>Get ready for bed<br><img src="images/goodnight.png" height="160"></td>
+    </tr>
+
+    <tr>
+        <td class="time">9:30-10:00pm</td>
+    </tr>
+
+</table>
+</body>
+</html>
