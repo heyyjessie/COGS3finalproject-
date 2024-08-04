@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica Li ₊˚⊹</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/a9e0f71d62.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Jessica Li ₊˚⊹</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" onclick="showSection('home')">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('about')">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('cogs3')">Projects</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="LiLab9Resume.pdf" class="btn btn-primary" id="resumeButton" target="_blank">My Resume &nbsp;<i class="fa-solid fa-file"></i></a>
+        </div>
+    </nav>
+
+    <!-- Sections -->
+    <div class="container-fluid">
+        <!-- Home Section -->
+        <section id="home" class="content-section home-section">
+            <h2>Nice to meet you!</h2>
+            <h1>My name is Jessica ₊˚⊹<br></h1>
+            <h3 id="typewriter">I am a general biology major studying at University of California San Diego.</h3>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section d-none">
+            <h2 class="section-title">About</h2>
+            <div class="about-section about-journey">
+                <h3>My Journey ⁺☀︎₊˚</h3>
+                <p>My parents immigrated from China to Canada in search of job opportunities and a better life for their children. Thus, I was born in a city next to the Rocky Mountains and known for its cowboys: Calgary, Alberta. I lived there for 17 years and expected to stay for the rest of my life. I applied to <a href="https://ucsd.edu/" target="_blank">UCSD</a> on a whim and was pleasantly surprised by the acceptance offer. Now, I am an international student studying general biology by the beautiful Pacific Ocean shores of La Jolla.</p>
+            </div>
+            <div class="about-section about-passion">
+                <h3>My Passion ₊˚⊹♡</h3>
+                <p>I have a deep passion for biology and medicine, and I am committed to staying informed about the latest developments in these fields. I first discovered my passion for biology while taking the International Baccalaureate program in high school. I fell in love with conducting experiments and discussing findings. After volunteering in the health field, I realized how inspired I was by medicine. Now, my passion has led me to volunteer at a <a href="https://health.ucsd.edu/" target="_blank">hospital</a> and take on many biology teaching roles during my time at UCSD. Please view my <a href="LiLab9Resume.pdf" target="_blank">resume</a> for more details.</p>
+            </div>
+            <div class="about-section about-interests">
+                <h3>My Interests ˚୨୧⋆｡</h3>
+                <p>Outside of my passion for biology and medicine, I have a deep love for art. I enjoy drawing on my iPad and sharing my creations, which has garnered me a Pinterest following of almost 90K. I have also sold art commissions, and some of my work has been used by streamers on <a href="https://m.twitch.tv/yoonaboona/about" target="_blank">Twitch</a>.
+
+                    I also have a long-standing passion for Chinese dance, which started when I was 4 years old. Now, I am an Officer and Principal Member of the Chinese Dance Association <a href="https://www.instagram.com/chinesedance.ucsd/" target="_blank">(CDA)</a> at UCSD.
+                    
+                    In my free time, I enjoy playing badminton and reading romance fiction.</p>
+            </div>
+        </section>
+
+        <!-- COGS 3 Section -->
+        <section id="cogs3" class="content-section d-none">
+            <h2 class="section-title">Projects</h2>
+            <p class="pageDescriptions">Projects that I created in COGS 3, demonstrating my proficiency in HTML, <br>CSS, and JavaScript, with the ability to create and modify web content.</p>
+            <div id="carouselExampleAutoplaying" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="schedule/LiLab2.html" target="_blank" class="carousel-link">
+                            <img src="Images/Schedule.png" class="d-block mx-auto" alt="Schedule">
+                            <div class="carousel-caption">
+                                <p>Schedule</p>
+                                <p>My 2024 Summer Session 1 schedule that I created with HTML and styled with CSS. I had a lot of fun despite it taking such a long time to finish. All the images were hand-drawn by myself. </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.figma.com/design/eER2uGZ4CidE6Kww6EZHOJ/Lab-5%3A-Figma?node-id=0-1&t=cDdIQfDRJm5YtSg8-1" target="_blank" class="carousel-link">
+                            <img src="Images/Figma.png" class="d-block mx-auto" alt="Figma">
+                            <div class="carousel-caption">
+                                <p>Figma</p>
+                                <p>A health-care app prototype that I created with Figma. I made a sleep tracker called snooZ and created a prototype using the Figma tutorials.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="dice/dice.html" target="_blank" class="carousel-link">
+                            <img src="Images/DiceGame.png" class="d-block mx-auto" alt="Dice">
+                            <div class="carousel-caption">
+                                <p>Dice</p>
+                                <p>A dice game I modified and styled from the DICE starter code provided by the course. This was my first time using javascript and it was especially satisfying when the "for" loops started to work!</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light p-3 text-center">
+        <a href="mailto:lijessica777@gmail.com" target="_blank"><i class="social-icon fa-solid fa-envelope"></i> Email</a> | 
+        <a href="https://www.linkedin.com/in/jessica-li/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> | 
+        <a href="https://www.instagram.com/jessica._li/" target="_blank"><i class="social-icon fa-brands fa-instagram"></i> Instagram</a> |
+        <a href="https://www.pinterest.ca/hey_jessie__/" target="_blank"><i class="fa-brands fa-pinterest"></i> Pinterest</a>
+    </footer>
+    <!--bootstrap (not sure why when i use the header one my carousel stops working, so I'm gonna keep it as a script at the bottom)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

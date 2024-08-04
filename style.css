@@ -1,0 +1,271 @@
+html, body {
+    height: 100%; /* Ensure full height for flex container */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container-fluid {
+    flex: 1; /* Allow the container to grow and fill available space */
+}
+
+/* Navbar Styling */
+.navbar-brand, .nav-link {
+    font-family: "Playfair Display", serif; /* Font for navbar */
+}
+.nav-link:hover {
+    color: #f9cac5; /* Color for links on hover */
+}
+
+#resumeButton {
+    background-color: #619cdb; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 8px; 
+    padding: 10px 20px; 
+    font-family: "Playfair Display", serif; 
+    font-weight: 400; 
+}
+
+/* Hover effect for Resume Button */
+#resumeButton:hover {
+    background-color: #80b8f4; /* Darker background color on hover */
+    color: #ffffff; /* Text color on hover */
+}
+
+/* Titles (H1, H2, H3) */
+h1, h2, h3 {
+    font-family: "Playfair Display", serif; /* Font for titles */
+}
+
+/* Specific font weights for titles */
+h1 {
+    font-weight: 400; /* Lighter weight for large text */
+}
+
+h2 {
+    font-weight: 500; /* Bold weight for subheadings */
+}
+
+h3 {
+    font-weight: 400; /* Lighter weight for smaller headings */
+}
+
+/* Home Section styles */
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure full viewport height */
+    text-align: center;
+    background-color: #e3f2fd;
+}
+
+.home-section h1 {
+    font-size: 5rem; /* Make "My name is Jessica." very large */
+    font-weight: 400; /* Ensure it's not bold */
+    margin-bottom: 20px; /* Add space below the h1 element */
+}
+
+.home-section h3 {
+    font-size: 2rem; /* Adjust font size for the h3 element */
+    font-weight: 400; /* Ensure it's not bold */
+    margin-top: 20px; /* Add space above the h3 element */
+}
+
+.content-section {
+    display: flex; /* Use flexbox for vertical centering */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 80vh; /* Ensure sections are tall enough */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ABOUT SECTION */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Left-align the content */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-section {
+    width: 100%; /* Full width for each section */
+    padding: 20px;
+    margin-bottom: 20px; /* Space between sections */
+    background-color: #f9f9f9; /* Default background color */
+    border-radius: 10px; /* Rounded corners for better appearance */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for better separation */
+}
+
+.about-journey {
+    background-color: #e3f2fd; 
+}
+
+.about-passion {
+    background-color: #f1f8e9; 
+}
+
+.about-interests {
+    background-color: #fbe9e7; 
+}
+
+/*COGS SECTION */
+.cogs-section {
+    text-align: center; /* Center text horizontally */
+}
+
+#cogs3 {
+    background-color: #f1f8e9; /* Default background color */
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 80vh; /* Ensure section is tall enough */
+}
+
+/*section descriptions */
+.pageDescriptions {
+    text-align: center;
+}
+
+/* Center text in specific sections */
+.content-section.text-center {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-weight: 550; /* Bold weight for the title */
+    margin: 0px 0 15px; /* Space around the title */
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f1f1f1; /* Background color for footer */
+    padding: 10px;
+    text-align: center;
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+}
+
+a {
+    color: #7979eb;
+}
+
+a:hover {
+    color: #f3b7b7;
+}
+
+/* Footer links */
+footer a {
+    color: #7979eb; /* Initial color of the footer links */
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Space between links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Footer links hover state */
+footer a:hover {
+    color: #f3b7b7; /* Hover color of the footer links */
+}
+
+
+/* Carousel */
+.carousel-inner {
+    max-width: 80%; /* Adjusted width for better fit */
+    margin: 0 auto;
+}
+
+.carousel-item {
+    position: relative;
+    text-align: center; /* Center text */
+}
+
+.carousel-inner img {
+    width: 50%; /* Adjust width to make images smaller */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Rounded corners */
+    margin: 0 auto; /* Center images horizontally */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+    color: #fff; /* White text */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 5px; /* Rounded corners for the caption background */
+    padding: 10px 20px; /* Padding around text */
+    display: none; /* Hide caption by default */
+}
+
+.carousel-link {
+    position: relative;
+    display: block;
+}
+
+.carousel-link img {
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 15px; /* Rounded corners */
+}
+
+.carousel-link:hover img {
+    opacity: 0.7; /* Slightly transparent on hover */
+}
+
+.carousel-link:hover .carousel-caption {
+    display: block; /* Show caption on hover */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 60px; /* Increase arrow size */
+    height: 60px; /* Increase arrow size */
+}
+
+.carousel-caption {
+    font-family: 'Poppins', sans-serif; /* Font for carousel text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-inner {
+        max-width: 90%;
+    }
+}
+
+/* Typewriter effect */
+#typewriter {
+    display: inline-block;
+    border-right: 2px solid black; /* Caret style */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflow text */
+    animation: caret-blink 0.7s step-start infinite; /* Blinking effect */
+}
+
+/* Caret blinking animation */
+@keyframes caret-blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
